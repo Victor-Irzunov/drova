@@ -77,8 +77,8 @@ main div:nth-child(1){
 main h1{
 	font-size: 4em;
 	color: #fff;
-	margin-top: 2em;
-	line-height: 1.2;
+	margin-top: 1em;
+	line-height: 1.1;
 }
 main h1 span{
 	color: yellow;
@@ -93,15 +93,60 @@ main h1 span{
 }
 .tel {
 	margin-left: 3em;
-	margin-bottom: 2em;
 	margin-top: 1em;
+	display: flex;
+	flex-direction: column;
 }
 .tel a{
 	color: yellow;
-	font-size: 3em;	
+	font-size: 1.8em;	
+	margin-bottom: 1em;
 }
+/* -------------- */
+.icon{
+	margin-left: 2em;
+}
+.icon ul {
+	display: flex;
+	justify-content: space-start;
+	align-items: center;
+}
+.icon ul li{
+	list-style: none;
+	/* margin-right: 1em; */
+	
+}
+.icon ul li a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 15px;
+}
+.icon ul li a span{
+	margin-left: .8em;
+}
+.fa-viber{
+	width: 40px;
+	height: 40px;
+}
+.icon ul li a .fa {
+	font-size: 1.8em;
+}
+
+.icon ul li:nth-child(1) a  {
+	color: #665cac;
+}
+.icon ul li:nth-child(2) a  {
+	color: #229ED9;
+}
+.icon ul li:nth-child(3) a {
+	color: #4AC959;
+}
+/* -------------- */
+
+
 .price-p{
-	font-size: 1.3em;
+	font-size: 1.2em;
 	color: #fff;
 	margin-bottom: .5em;
 }
@@ -131,7 +176,7 @@ main ul li{
 }
 .price h2{
 	color: #fff;
-	font-size: 1.6em;
+	font-size: 1.5em;
 	font-weight: 300;
 }
 .box-2{
@@ -418,15 +463,13 @@ padding: 20px 20px 20px 20px;
 	display: none;
 }
 
-.footer{
-	display: flex;
-}
-.footer p{
+
+/* .footer p{
 	font-size: 1em;
 	color: #fff;
-	margin-right: 1em;
 	font-weight: 300;
-}
+	margin-bottom: 1em;
+} */
 
 
 @media (max-width: 991px){
@@ -446,9 +489,9 @@ padding: 20px 20px 20px 20px;
 	.price {
 		padding-left: 0em;
   }
-  main h1{
+  /* main h1{
 	margin-top: 1em;
-  }
+  } */
   .btn-send{
 	display: block;
   }
@@ -523,6 +566,11 @@ font-size: 3em;
 .work-time{
 	font-size: .6em;
 }
+}
+@media (max-width: 428px){
+	main{
+		justify-content: space-around;
+	}
 }
 @media (max-width: 414px){
 	main h1{
