@@ -558,7 +558,7 @@ font-size: 3em;
 {
 	main h1{
 		font-size: 2.1em;
-		margin-top: 2em;
+		margin-top: 3em;
 	}
 	main h3{
 		font-size: .8em;
@@ -595,10 +595,13 @@ font-size: 3em;
 	font-size: .6em;
 }
 .nal-beznal span {
-	font-size: 1em;
+	font-size: .95em;
 }
 }
 @media (max-width: 428px){
+	.container{
+		width: 95%;
+	}
 	main{
 		justify-content: space-around;
 	}
@@ -607,7 +610,5 @@ font-size: 3em;
 	main h1{
 		font-size: 2em;
 	}
-	.nal-beznal span {
-		font-size: 1em;
-  }
+	
 }
